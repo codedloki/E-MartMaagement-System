@@ -49,7 +49,11 @@ class StoreManagementSystem:
         lbltitle.pack(side=TOP,fill=X)
         
 
+<<<<<<< HEAD
         img1=Image.open("C:\\Tushar\\StoreMag\\logos.png")
+=======
+        img1=Image.open("/home/prashik/Projects/Python/E-MartMaagement-System/logos.jpg")
+>>>>>>> 7f9d569 (Added 2fa)
         img1=img1.resize((80,80),Image.Resampling.LANCZOS)
         self.photoimg1=ImageTk.PhotoImage(img1)
         b1=Button(self.root,image=self.photoimg1,borderwidth=0)
@@ -371,7 +375,11 @@ class StoreManagementSystem:
     def add_prd(self):
         try:
             print("on")
+<<<<<<< HEAD
             conn=mysql.connector.connect(host="localhost",username="root",password="w@2915djkq#",database="store")
+=======
+            conn=mysql.connector.connect(host="sql200.infinityfree.com",username="if0_39804943",password="Lucifer1974",database="store")
+>>>>>>> 7f9d569 (Added 2fa)
             my_cursor=conn.cursor()
             print("t")
             my_cursor.execute("insert into stordata(prdid,prdnam,categ,expirydat,disct,price) values(%s,%s,%s,%s,%s,%s)",(
@@ -804,16 +812,29 @@ class StoreManagementSystem:
               f1.write(self.bill_data)
               op=messagebox.showinfo("Saved!!",f"Bill No. : {self.bill_no.get()} Saved Successfully!!!")
               f1.close()
+<<<<<<< HEAD
               self.new_window=Toplevel()
               self.app=StoreManagementSystem(self.new_window)
+=======
+              #self.new_window=Toplevel()
+              #self.app=StoreManagementSystem(self.new_window)
+            # After saving, just show confirmation
+              messagebox.showinfo("Saved!!", f"Bill No. : {self.bill_no.get()} Saved Successfully!!!")
+
+>>>>>>> 7f9d569 (Added 2fa)
 
     def print_bill(self):
           q = self.textarea.get(1.0,"end-1c")
           filename = tempfile.mktemp('.txt')
           open(filename,'w').write(q)
           os.startfile(filename,"Print")
+<<<<<<< HEAD
           self.new_window=Toplevel()
           self.app=StoreManagementSystem(self.new_window)
+=======
+#          self.new_window=Toplevel()
+ #         self.app=StoreManagementSystem(self.new_window)
+>>>>>>> 7f9d569 (Added 2fa)
           
 
     def search_bill(self):
@@ -857,4 +878,9 @@ class StoreManagementSystem:
 if __name__ == "__main__":
     root=Tk()
     obj=StoreManagementSystem(root)
+<<<<<<< HEAD
     root.mainloop()
+=======
+    root.mainloop()
+    
+>>>>>>> 7f9d569 (Added 2fa)
