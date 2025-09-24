@@ -21,7 +21,7 @@
 
 ### 🔐 Security Module
 ![2FA](https://img.shields.io/badge/Feature-2FA%20Authentication-important)
-![RBAC](https://img.shields.io/badge/Feature-Role%20Based%20Access-blueviolet)
+
 
 - **Dual-Factor Authentication** with TOTP support
 - **Role-Based Access Control** (Admin, Manager, Cashier)
@@ -32,10 +32,9 @@
 ![Inventory](https://img.shields.io/badge/Feature-Smart%20Inventory-success)
 ![Barcode](https://img.shields.io/badge/Feature-Barcode%20Support-informational)
 
-- **Real-time Inventory Tracking**
 - **Barcode/QR Code Integration**
-- **Category & Supplier Management**
-- **Automated Stock Alerts**
+
+
 
 ### 💳 Sales & Billing
 ![POS](https://img.shields.io/badge/Feature-Point%20of%20Sale-blue)
